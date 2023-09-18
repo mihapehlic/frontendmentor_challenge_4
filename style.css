@@ -43,10 +43,12 @@ picture {
   border-radius: 1rem;
   display: flex;
   flex-direction: column;
+  max-width: 30rem;
 }
 
 .product-card .img-half picture img {
   border-radius: 1rem 1rem 0 0;
+  object-fit: cover;
 }
 
 .product-card .text-half {
@@ -56,7 +58,7 @@ picture {
 .product-card .text-half .title-group .ribbon-text {
   text-transform: uppercase;
   color: var(--gray-blue);
-  letter-spacing: 0.3rem;
+  letter-spacing: 0.5rem;
   margin-bottom: 1rem;
 }
 
@@ -78,6 +80,7 @@ picture {
   align-items: center;
   gap: 1rem;
   margin-bottom: 1.5rem;
+  flex-wrap: wrap;
 }
 
 .product-card .text-half .card-prices span {
@@ -117,23 +120,27 @@ picture {
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    width: 800px;
+    min-width: 50rem;
   }
 
   .product-card .text-half {
     width: 50%;
-    height: 100%;
     /* flex-basis: 0;
     flex-grow: 1; */
   }
 
   .product-card .text-half .card-info {
     line-height: 1.7;
+    margin-bottom: 3rem;
   }
 
   .product-card .text-half .title-group .title {
     font-size: 3.5em;
     margin-bottom: 1rem;
+  }
+
+  .product-card .text-half .card-prices {
+    margin-bottom: 2rem;
   }
 
   .product-card .img-half {
@@ -144,5 +151,6 @@ picture {
 
   .product-card .img-half picture img {
     border-radius: 1rem 0 0 1rem;
+    object-fit: cover;
   }
 }
