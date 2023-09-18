@@ -103,6 +103,12 @@ picture {
   border: none;
   padding: 1.2rem;
   border-radius: 0.5rem;
+  cursor: pointer;
+}
+
+.product-card .text-half button:active {
+  background-color: hsl(158, 36%, 20%);
+  border: none;
 }
 
 .product-card .text-half button span {
